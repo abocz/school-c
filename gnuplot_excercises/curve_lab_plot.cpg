@@ -1,0 +1,10 @@
+set title "Values of X VS Y" font  "Verdana, 14" 
+set xlabel "Years" font  "Verdana, 12" 
+set ylabel "Patients" font  "Verdana, 12" 
+
+#set terminal postscript portrait enhanced mono dashed lw 1 "Helvetica" 14 
+set terminal pngcairo size 800, 600 enhanced
+set output "curve_lab_image.png"
+
+unset key
+plot "curve_lab.gpl" u 1:2 w linespoints

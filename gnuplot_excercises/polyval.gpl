@@ -1,0 +1,10 @@
+set title "Values of X VS Y" font  "Verdana, 14" 
+set xlabel "Years" font  "Verdana, 12" 
+set ylabel "Patients" font  "Verdana, 12" 
+
+#set terminal postscript portrait enhanced mono dashed lw 1 "Helvetica" 14 
+set terminal pngcairo size 800, 600 enhanced
+set output "assign6prob2.png"
+
+unset key
+plot "assign6prob2.gpl" u 1:2 w linespoints

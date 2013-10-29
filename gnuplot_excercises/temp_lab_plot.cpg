@@ -1,0 +1,10 @@
+set title "Time by Difference on Temperatures" font  "Verdana, 16" 
+set xlabel "time" font  "Verdana, 12" 
+set ylabel "Diff of Temp" font  "Verdana, 12" 
+
+#set terminal postscript portrait enhanced mono dashed lw 1 "Helvetica" 14 
+set terminal pngcairo size 800, 600 enhanced
+set output "temp_lab_image.png"
+
+unset key
+plot "temp_lab.gpl" u 2:xticlabels(1) w linespoints, "temp_lab.gpl" u 3:xticlabels(1) w linespoints
