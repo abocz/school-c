@@ -1,5 +1,5 @@
 school-c
 ==========
 
-School related files and assignments
+School related files and assignments<br>
 language: c
